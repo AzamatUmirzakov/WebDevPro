@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	transition: all 0.1s linear;
+}
+
+html, body{
+	font-size: 100%;
+	height: 100%;
+}
+
+body{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-template-rows: 45% 45%;
+	grid-column-gap: 5%;
+	grid-row-gap: 10%;
+}
+
+div.grid{
+	background: url("bottle.jpg") top center no-repeat;
+	background-size: cover;
+}
+
+div.grid-block{
+	background: rgba(0, 0, 0, 0);
+	height: 100%;
+	padding: 100px 70px;
+	font-family: "Open Sans Semibold",Arial, Helvetica, sans-serif;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+div.grid-block>h1>a{
+	font-size: 1.25em;
+	color: transparent;
+	text-decoration: none;
+}
+
+div.grid-block>h2>a{
+	font-size: 0.9375em;
+	color: transparent;
+	text-decoration: none;
+}
+
+div.grid:hover>div{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+div.grid:hover>div>h1 a, div.grid:hover>div>h2 a{
+	color: #fff;
+}
